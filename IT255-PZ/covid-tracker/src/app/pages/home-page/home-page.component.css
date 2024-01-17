@@ -1,0 +1,119 @@
+h2 {
+  font-family: 'Montserrat', serif;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 3em;
+  user-select: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 87px auto;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.viruses {
+  width: 50%;
+  height: 50vh;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(350px, 400px);
+    opacity: 1;
+  }
+  33% {
+    transform: translate(135px, -10px);
+  }
+  66% {
+    transform: translate(-20px, -20px);
+  }
+  100% {
+    transform: translate(350px, 400px);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: translate(60px, 198px);
+    opacity: 1;
+  }
+  33% {
+    transform: translate(35px, -15px);
+  }
+  66% {
+    transform: translate(105px, 92px);
+  }
+  100% {
+    transform: translate(160px, 198px);
+    opacity: 1;
+  }
+}
+
+img {
+  animation: 3000ms rotate infinite linear;
+  opacity: 0;
+  position: relative;
+  left: 15%;
+}
+
+img:nth-child(1) {
+  animation-delay: 10ms;
+}
+
+img:nth-child(2) {
+  animation-delay: 300ms;
+  animation: 1600ms rotate2 infinite linear;
+}
+
+img:nth-child(3) {
+  animation-delay: 600ms;
+  animation: 1000ms rotate2 infinite linear;
+}
+
+img:nth-child(4) {
+  animation-delay: 1900ms;
+}
+
+img:nth-child(5) {
+  animation-delay: 1200ms;
+  animation: 2200ms rotate2 infinite linear;
+}
+img:nth-child(6) {
+  animation-delay: 1650ms;
+}
+img:nth-child(7) {
+  animation-delay: 1800ms;
+  animation: 2400ms rotate2 infinite linear;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  user-select: none;
+}
+
+.safety-paragraph {
+  color: #fff;
+  box-shadow: #ABB5C3 0 0 10px 0;
+  width: 50%;
+  border-radius: 5px;
+  border: 2px solid #f07280;
+  font-size: 1.5em;
+  padding: 1em;
+  text-align: center;
+}
+
+h3 {
+  text-underline: #f07280;
+  font-family: "Montserrat", serif;
+}
+
+li {
+  font-family: "Montserrat", serif;
+  user-select: none;
+}

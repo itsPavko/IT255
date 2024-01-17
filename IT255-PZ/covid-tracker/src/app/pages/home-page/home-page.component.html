@@ -1,0 +1,20 @@
+<h2>Latest Covid 19 information</h2>
+<div class="content">
+  <div class="viruses">
+    <img src="../../../assets/images/virus.png" alt="">
+    <img src="../../../assets/images/virus.png" alt="">
+    <img src="../../../assets/images/virus.png" alt="">
+    <img src="../../../assets/images/virus.png" alt="">
+    <img src="../../../assets/images/virus.png" alt="">
+    <img src="../../../assets/images/virus.png" alt="">
+    <img src="../../../assets/images/virus.png" alt="">
+  </div>
+  <div class="safety-paragraph">
+    <h3>Safety measures:</h3>
+    <ul *ngFor="let safetyItem of safetyList">
+      <li>
+        {{ safetyItem }}
+      </li>
+    </ul>
+  </div>
+</div>

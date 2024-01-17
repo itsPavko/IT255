@@ -1,0 +1,11 @@
+<div class="navbar-container">
+  <div class="title">
+    <p>Covid Tracker</p>
+  </div>
+  <div class="navbar">
+    <p [routerLink]="['/home-page']" *ngIf="this.session.isLoggedInCheck()">Home</p>
+    <p [routerLink]="['/covid-data']" *ngIf="this.session.isLoggedInCheck()">Covid data</p>
+    <p [routerLink]="['/graph']" *ngIf="this.session.isLoggedInCheck()" >Graph</p>
+    <p (click)="logout()" *ngIf="this.session.isLoggedInCheck()">Logout</p>
+  </div>
+</div>
